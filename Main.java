@@ -18,5 +18,15 @@ public class Main {
       count = count + 1;
     }
     System.out.println("All done");
+
+    //do while loop
+    int count2 = 1;
+    //do while loop to count
+    do{
+      //print number
+      System.out.println(count2);
+      //increment the counter
+      count2 = count2 + 1;
+    }while(count2 <= 5);
   }
 }
