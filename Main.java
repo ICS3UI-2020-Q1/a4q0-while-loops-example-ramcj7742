@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /**
  * While loop example
  * @author Jaden Ramcharan
@@ -9,13 +10,22 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    //declare the variable
+    int upTo;
+    do{
+      System.out.println("what number to count to? (positive)");
+     upTo = input.nextInt();
+    }while(upTo <= 0);
+
+
     //  create a variable to keep track of the number
     int count = 1;
-    while(count <= 5){
-      // print the number we are at
-      System.out.println(count);
-      //increase the value of count by 1
-      count = count + 1;
+    while(count <= upTo){
+       // print the number we are at
+       System.out.println(count);
+        //increase the value of count by 1
+        count = count + 1;
     }
     System.out.println("All done");
 
