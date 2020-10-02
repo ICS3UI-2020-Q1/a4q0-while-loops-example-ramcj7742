@@ -1,6 +1,6 @@
 /**
- *
- * @author 
+ * While loop example
+ * @author Jaden Ramcharan
  */
 public class Main {
 
@@ -9,7 +9,14 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
-    
+    //  create a variable to keep track of the number
+    int count = 1;
+    while(count <= 5){
+      // print the number we are at
+      System.out.println(count);
+      //increase the value of count by 1
+      count = count + 1;
+    }
+    System.out.println("All done");
   }
 }
